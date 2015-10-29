@@ -1,3 +1,16 @@
+/*! SVG Icon Sprite Polyfill for IE9+
+ * Copyright 2015 Tim Wright
+ * Licensed under MIT
+ * https://github.com/timwright12/SVG-Icon-Sprite-Polyfill/
+ * 
+ * HTML Example Usage:
+ * 
+ * <svg role="img" aria-label="Golf clubs in a bag" class="icon icon-add-to-my-bag">
+ *   <title>Golf clubs in a bag</title>
+ *   <use xlink:href="img/svg-defs.svg#icon-add-to-my-bag"></use>
+ * </svg>
+ */
+
 ;(function (doc) {
   
   // Enable strict mode

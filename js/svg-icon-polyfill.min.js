@@ -1,0 +1,6 @@
+/*! SVG Icon Sprite Polyfill for IE9+
+ * Copyright 2015 Tim Wright
+ * Licensed under MIT
+ * https://github.com/timwright12/SVG-Icon-Sprite-Polyfill/ */
+
+!function(t){"use strict";var e={};e.ns="SVG Sprite Polyfill",e.ajax=function(t,e){var n,o=new XMLHttpRequest;o.open("GET",t,!0),o.onload=function(){o.status>=200&&o.status<400?(n=o.responseText,"function"==typeof e&&e.call(this,n)):console.log("Error reaching the server")},o.onerror=function(){console.log("Connection error")},o.send()},e.init=function(){var n,o,r,i,s,u,c,d=t.querySelectorAll("svg > use"),l=e.create('<div id="svg-poly-target" style="position: absolute;height: 0; width: 0;"></div>'),a=[],f=[];for(document.body.insertBefore(l,document.body.childNodes[0]),r=0;r<d.length;r+=1)s=d[r],c=s.getAttribute("xlink:href"),f=c.split("#"),n=f[0],o=f[1],n&&(a.push(n),s.setAttribute("xlink:href","#"+o));for(a=a.filter(function(t,e){return a.indexOf(t)==e}),i=0;i<a.length;i+=1)u=a[i],e.ajax(u,function(t){document.getElementById("svg-poly-target").innerHTML+=t})},e.create=function(t){var e=document.createDocumentFragment(),n=document.createElement("div");for(n.innerHTML=t;n.firstChild;)e.appendChild(n.firstChild);return e},/MSIE|Trident/.test(navigator.userAgent)&&document.addEventListener("DOMContentLoaded",function(){e.init()})}(this.document);
