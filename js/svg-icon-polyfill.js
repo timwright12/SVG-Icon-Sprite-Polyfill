@@ -47,7 +47,7 @@
   // Start the application
   App.init = function() {
     
-    var svg = doc.querySelectorAll("svg > use");
+    var svgUse = doc.querySelectorAll("svg > use");
     var fragment = App.create('<div id="svg-poly-target" style="position: absolute;height: 0; width: 0;"></div>');
     var svgUrls = [];
     var attrArray = [];
@@ -58,15 +58,13 @@
     var obj;
     var loopObj;
     var attr;
-    //var request;
-    //var resp;
     
     // Insert the document fragment catch the contents of the SVG
     document.body.insertBefore(fragment, document.body.childNodes[0]);
-    
-    for (i = 0; i < svg.length; i = i + 1) {
+
+    for (i = 0; i < svgUse.length; i = i + 1) {
       
-      obj = svg[i];
+      obj = svgUse[i];
       attr = obj.getAttribute('xlink:href');
       attrArray = attr.split('#');
       url = attrArray[0];
@@ -80,7 +78,7 @@
     } // for
     
     // Remove duplicate URLs from the array so we're not making double Ajax calls
-    svgUrls = svgUrls.filter( function(item, pos) {
+    svgUrls = svgUrls.filter( function( item, pos ) {
       return svgUrls.indexOf(item) == pos;
     });
     
