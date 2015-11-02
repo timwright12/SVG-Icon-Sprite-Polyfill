@@ -74,7 +74,7 @@
     var attr;
     
     // Insert the document fragment catch the contents of the SVG
-    document.body.insertBefore(fragment, document.body.childNodes[0]);
+    doc.body.insertBefore(fragment, doc.body.childNodes[0]);
     
     // Loop through all the svg <use> elements
     for (i = 0; i < svgUse.length; i = i + 1) {
@@ -103,7 +103,7 @@
       loopObj = svgUrls[j];
       
       App.ajax( loopObj, function( response ) {
-        document.getElementById('svg-poly-target').innerHTML += response;
+        doc.getElementById('svg-poly-target').innerHTML += response;
       });
 
     } // for
@@ -114,8 +114,8 @@
   
   App.create = function( htmlStr ) {
 
-    var frag = document.createDocumentFragment();
-    var temp = document.createElement('div');
+    var frag = doc.createDocumentFragment();
+    var temp = doc.createElement('div');
     
     temp.innerHTML = htmlStr;
     
