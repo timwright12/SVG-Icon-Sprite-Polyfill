@@ -22,7 +22,7 @@
   // A proper namespace
   App.ns = "SVG Sprite Polyfill";
   
-  // Ajax!
+  // Ajax that isn't jquery?!?!
   App.ajax = function(loopObj, callback) {
     
     var request = new XMLHttpRequest();
@@ -60,6 +60,7 @@
   // Start the application
   App.init = function() {
     
+    // Set up and cache variables
     var svgUse = doc.querySelectorAll("svg > use");
     var fragment = App.create('<div id="svg-poly-target" style="position: absolute;height: 0; width: 0;"></div>');
     var svgUrls = [];
@@ -74,7 +75,8 @@
     
     // Insert the document fragment catch the contents of the SVG
     document.body.insertBefore(fragment, document.body.childNodes[0]);
-
+    
+    // Loop through all the svg <use> elements
     for (i = 0; i < svgUse.length; i = i + 1) {
       
       obj = svgUse[i];
@@ -124,6 +126,8 @@
     return frag;
 
   };
+  
+  // Only use it in IE, this should be a feature detect, but... I'm not sure what the feature is to detect.
   
   /MSIE|Trident/.test(navigator.userAgent) && document.addEventListener('DOMContentLoaded', function () {
   
