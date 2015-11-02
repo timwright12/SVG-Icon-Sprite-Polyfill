@@ -5,6 +5,7 @@
 This polyfill allows you to use:
 
 	<svg role="img" aria-label="Describe the icon here" class="icon icon-archive">
+		<title>Describe the icon here</title>
 		<use xlink:href="img/svg-defs.svg#icon-archive"></use>
 	</svg>
 
