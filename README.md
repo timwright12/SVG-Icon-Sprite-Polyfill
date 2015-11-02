@@ -4,7 +4,7 @@
 
 This polyfill allows you to use:
 
-	<svg aria-hidden="true" class="icon icon-archive">
+	<svg role="img" aria-label="Describe the icon here" class="icon icon-archive">
 		<use xlink:href="img/svg-defs.svg#icon-archive"></use>
 	</svg>
 
