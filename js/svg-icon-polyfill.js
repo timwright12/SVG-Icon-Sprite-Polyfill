@@ -129,7 +129,7 @@
   
   // Only use it in IE, this should be a feature detect, but... I'm not sure what the feature is to detect.
   
-  /MSIE|Trident/.test(navigator.userAgent) && document.addEventListener('DOMContentLoaded', function () {
+  /MSIE|Trident/.test(navigator.userAgent) && doc.addEventListener('DOMContentLoaded', function () {
   
     App.init();
   
