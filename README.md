@@ -12,3 +12,16 @@ This polyfill allows you to use:
 in Internet Explorer 9+.
 
 Just include the script and it should work.
+
+Your svg-defs.svg file should look like this:
+
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<defs>
+  
+    			<symbol id="icon-archive" viewBox="0 0 1024 1024">
+    				<title>add-to-my-bag</title>
+    				<path class="path1" d="[all the data points that draw the image]"></path>
+    			</symbol>
+  
+		</defs>
+	</svg>
