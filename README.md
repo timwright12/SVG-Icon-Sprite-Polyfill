@@ -1,7 +1,7 @@
-# SVN Icon Polyfill
+# SVG Icon Polyfill
 ---
 
-## A polyfill for Internet explorer and the SVN USE element.
+## A polyfill for Internet explorer and the SVG USE element.
 
 This polyfill allows you to use:
 
