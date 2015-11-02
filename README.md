@@ -5,9 +5,9 @@
 
 This polyfill allows you to use:
 
-	`<svg aria-hidden="true" class="icon icon-archive">
+	<svg aria-hidden="true" class="icon icon-archive">
 		<use xlink:href="img/svg-defs.svg#icon-archive"></use>
-	</svg>`
+	</svg>
 
 in Internet Explorer 9+.
 
