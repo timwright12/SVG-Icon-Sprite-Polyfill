@@ -1,4 +1,4 @@
-# SVG Icon Polyfill
+# SVG Icon Sprite Polyfill
 ---
 
 ## A polyfill for Internet explorer and the SVG USE element.
