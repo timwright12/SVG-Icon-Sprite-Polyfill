@@ -2,7 +2,7 @@
 
 ## A polyfill for Internet explorer and the SVG USE element.
 
-Article: http://www.freshtilledsoil.com/svg-fragment-identifiers/
+Article: http://csskarma.com/blog/svg-fragment-identifiers/
 
 This polyfill allows you to use:
 
