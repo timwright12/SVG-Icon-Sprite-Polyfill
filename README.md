@@ -2,6 +2,8 @@
 
 ## A polyfill for Internet explorer and the SVG USE element.
 
+Article: http://www.freshtilledsoil.com/svg-fragment-identifiers/
+
 This polyfill allows you to use:
 
 	<svg role="img" aria-label="Describe the icon here" class="icon icon-archive">
