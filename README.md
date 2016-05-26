@@ -4,6 +4,8 @@
 
 Article: http://csskarma.com/blog/svg-fragment-identifiers/
 
+Demo: https://timwright12.github.io/SVG-Icon-Sprite-Polyfill/
+
 This polyfill allows you to use:
 
 	<svg role="img" aria-label="Describe the icon here" class="icon icon-archive">
